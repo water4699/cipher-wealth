@@ -6,10 +6,10 @@ import { useInMemoryStorage } from "../hooks/useInMemoryStorage";
 import { useMetaMaskEthersSigner } from "../hooks/metamask/useMetaMaskEthersSigner";
 import { useCipherWealth } from "@/hooks/useCipherWealth";
 import { errorNotDeployed } from "./ErrorNotDeployed";
-import { 
-  Wallet, Lock, Unlock, RefreshCw, ArrowDownToLine, ArrowUpFromLine, 
-  Shield, Eye, EyeOff, Sparkles, TrendingUp, Activity, Zap, 
-  CheckCircle, Clock, AlertCircle
+import {
+  Wallet, Lock, Unlock, RefreshCw, ArrowDownToLine, ArrowUpFromLine,
+  Shield, Eye, EyeOff, Sparkles, Activity, Zap,
+  CheckCircle, Clock
 } from "lucide-react";
 
 export const CipherWealthPanel = () => {
@@ -395,7 +395,7 @@ export const CipherWealthPanel = () => {
               <p className="text-sm text-muted-foreground">FHEVM Status</p>
             </div>
             <p className="font-semibold text-xl text-foreground flex items-center gap-2">
-              {fhevmStatus === 'created' ? (
+              {fhevmStatus === 'ready' ? (
                 <>
                   <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
                   <span className="text-success">Active</span>
